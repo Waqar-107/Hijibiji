@@ -17,7 +17,7 @@
     `curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer`
 - Convert the audio file into WAV format
 - Use the command `python3 audioTranscript_cmd.py --aggressive 1 --audio audio_file_location --model ./models/` to convert
-- Note that you will need to provide the proper location of the file `audioTranscript_cmd.py`. Use `readlink -f file-name` to find out the location.
+- Note that the models and the python files are not in the same directory as the audio file. So, write the locations accordingly.
 
 References 
 - https://www.assemblyai.com/blog/deepspeech-for-dummies-a-tutorial-and-overview-part-1/
