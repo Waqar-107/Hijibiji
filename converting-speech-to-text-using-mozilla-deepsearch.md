@@ -11,12 +11,13 @@
   - `source venv/bin/activate`
   - `pip3 install -r requirements.txt`
 - Create a folder called `models` and download the model files using,
-
+- 
     `curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm`
     
     `curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer`
-- Convert the audio file in wav format
+- Convert the audio file into WAV format
 - Use the command `python3 audioTranscript_cmd.py --aggressive 1 --audio audio_file_location --model ./models/` to convert
+- Note that you will need to provide the proper location of the file `audioTranscript_cmd.py`. Use `readlink -f file-name` to find out the location.
 
 References 
 - https://www.assemblyai.com/blog/deepspeech-for-dummies-a-tutorial-and-overview-part-1/
